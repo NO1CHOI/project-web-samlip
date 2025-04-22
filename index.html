@@ -44,10 +44,18 @@
                     <a href="#"><img src="./images/customer_logo.png" alt="소비자중심"></a>
                 </div>
                 <div class="right">
-                    <div class="family_site site">
+                    <!-- 서버와 연결된 작업이 아닌 단순 수행작업(로그인, 회원가입,장바구니,구매하기,회원정보,게시판 등등)일 경우는 input, button 등의 태그를 작성해도 fomr 태그를 추가 작성하지 않아도 된다. -->
+                    <select name="family_site" class="site">
+                        <option>FAMILY SITES</option>
+                        <option value="https://www.paris.co.kr/">PARIS BAGUETTE</option>
+                        <option value-="https://www.baskinrobbins.co.kr/">BASKIN ROBBINS</option>
+                        <option value="https://www.dunkindonuts.co.kr/">DUNKIN'</option>
+                        <option value="http://www.shakeshack.kr/index.jsp">SHAKE SHAKE</option>
+                    </select>
+                    <!-- <div class="family_site site">
                         <span>FAMILY SITES</span>
                         <img src="./images/arrow.png" alt="더보기">
-                    </div>
+                    </div> -->
                     <div class="site_map site">
                         <span>SITE MAP</span>
                         <img src="./images/arrow.png" alt="더보기">
@@ -60,6 +68,7 @@
                     101,Gongdan 1-dearo,Sheung-si,Gyeonggi-do,Republic of Korea ㈜SPC 대표이사 황종현
                 </address>
                 <p>&copy;SPC Samlip. All rights reserved</p>
+                <div class="name"></div>
             </div>
         </footer>
     </div>
