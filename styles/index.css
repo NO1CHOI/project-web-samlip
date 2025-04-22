@@ -9,8 +9,7 @@
 #wrap header nav .gnb li {}
 #wrap header nav .gnb li a {}
 /* sub nav 시작 */
-#wrap header .sub_nav {}
-#wrap header .sub_nav .right_menu {}
-#wrap header .sub_nav .right_menu li {}
-#wrap header .sub_nav .right_menu li a {}
-#wrap header .sub_nav .right_menu li a img {}
+#wrap header .right_menu {}
+#wrap header .right_menu li {}
+#wrap header .right_menu li a {}
+#wrap header .right_menu li a img {}
