@@ -1,0 +1,50 @@
+/* ir.css */
+
+/* 
+font-size:3.75rem; 60px
+font-size:1.5rem; 24px
+font-size:1.125rem; 18px
+font-size:0.75rem; 12px
+*/
+#wrap main {}
+#wrap main .path {
+    background-color:#F1F1F1;
+    text-align: right;
+    font-size:0.75rem;
+    letter-spacing: -0.02rem;
+    padding:12px 60px 12px 0;
+    border:1px solid #F1F1F1; 
+    border-left:0;
+    border-right:0;
+}
+#wrap main .path * {/* 글자디자인구조 */}
+#wrap main .path a {}
+#wrap main .path img {}
+#wrap main .path em {}
+#wrap main > * {text-align: center;}
+#wrap main h1 {
+    font-size:3.75rem;
+    font-weight: 600;
+    padding:80px 0 20px 0;
+}
+#wrap main > p {
+    padding-bottom: 80px;
+}
+/* ============================= section .bg 시작 */
+#wrap main .bg {
+    /* background-image:url(../images/ir/ir_icon_1.png) no-repeat scroll left top; */
+    background-color: #fcfcfc;
+    padding:80px 0;
+}
+#wrap main .bg .ir_list {overflow: hidden;}
+/* 레이아웃 위치 /정렬 기법 종류 inline-block, float, flex, position */
+#wrap main .bg .ir_list a {
+    float:left;
+
+    display: inline-block;
+    width:260px;
+    height:250px;
+    background-color: yellowgreen;
+}
+#wrap main .bg .ir_list a h2 {}
+#wrap main .bg .ir_list a p {}
