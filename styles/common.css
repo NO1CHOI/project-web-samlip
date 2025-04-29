@@ -8,15 +8,37 @@
 /* #eee : 박스색 */
 
 #wrap {}
-#wrap header {}
+#wrap header {
+    /* background-color: yellowgreen; */
+    height: 92px;
+    padding:0 60px;
+    /* container (header) item (h1, nav, right_menu) 정렬 */
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
 /* nav 시작 */
-#wrap header nav {}
-#wrap header nav .gnb {}
-#wrap header nav .gnb li {}
-#wrap header nav .gnb li a {
+#wrap header nav {
+    /* background-color: yellow; */
+}
+#wrap header nav .gnb {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#wrap header nav .gnb li {
+    margin-right: 60px;
+}
+#wrap header nav .gnb li:last-child {
+    margin-right:0;
+}
+#wrap header nav .gnb li a { 
+    height: 92px; display: block;
+    line-height: 92px;
+    /* border:1px solid #000; */
     /* reset.css 초기값에 다 있기 때문에 생략가능 */
     /* font-family: 'pretendard', sans-serif;
     letter-spacing:-0.02rem;
@@ -27,19 +49,65 @@
     font-weight: 700;
 }
 /* sub nav 시작 */
-#wrap header .right_menu {}
-#wrap header .right_menu li {}
+#wrap header .right_menu {
+    /* background-color: wheat; */
+    display: flex; flex-flow: row nowrap;
+}
+#wrap header .right_menu li {
+    margin-left: 30px;
+}
+#wrap header .right_menu li:first-child {
+    display: flex;
+    flex-flow:row nowrap;
+    margin-left:0;
+    align-items: center;
+}
+#wrap header .right_menu li:first-child a {
+    /* background-color: #da2128; */
+    line-height: 24px;
+}
+/* 포토샵,피그마에서 디자인한 구분선 디자인은 css에서 가상선택자 after 또는 before를 이용하여 면으로 변경하여 디자인한다. */
+#wrap header .right_menu li:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 2px; height: 20px;
+    background-color: #000;
+    margin-left:30px;
+}
 #wrap header .right_menu li a {
     font-size:0.75rem; /* 12px */
     letter-spacing: 0;
 }
 #wrap header .right_menu li a img {}
 /* ----------------------------------------footer */
-#wrap footer {}
-#wrap footer .top {}
-#wrap footer .top .left {}
+#wrap .footer_full_w {
+    width: 100%;
+    padding: 50px 60px;
+}
+#wrap footer {
+    width: 1280px; margin: 0 auto;
+    padding:50px 0;
+    /* background-color: wheat; */
+}
+#wrap footer .top {
+    /* background-color: violet; */
+    margin-bottom: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap footer .top .left {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
 #wrap footer .top .left a {
     font-weight: 600;
+    margin-right:51px;
+}
+#wrap footer .top .left a:last-child {
+    margin-right:0;
 }
 #wrap footer .top .left a:nth-child(1) {
     color:#138fbf;
@@ -48,21 +116,35 @@
     color:#da2128;
 }
 #wrap footer .top .left a img {}
-#wrap footer .top .right {}
+#wrap footer .top .right {
+    /* background-color: brown; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
 /* ============================== footer 패밀리 사이트+사이트맵 공통 */
 #wrap footer .top .right .site {
     /* background-color: yellow; */
     border: 2px solid #eee;
     font-size: 0.75rem;
     padding:7px 10px;
+    height: 38px;
 }
 /* ============================== footer 패밀리 사이트+ 사이트맵 공통*/
 #wrap footer .top .right select {
-    width: 197px;
+    width: 197px; outline: none;
+    background:#fff url(../images/arrow.png) no-repeat 95% center;
+    background-size: 18px;
 }
 #wrap footer .top .right select option {}
 #wrap footer .top .right .site_map {
+    background: #fff;
     width: 135px;
+    display:flex;
+    margin-left:20px;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 #wrap footer .top .right .site_map span {}
 #wrap footer .top .right .site_map img {
