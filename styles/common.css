@@ -29,13 +29,9 @@
     display: flex;
     flex-flow: row nowrap;
 }
-#wrap header nav .gnb li {
-    margin-right: 60px;
-}
-#wrap header nav .gnb li:last-child {
-    margin-right:0;
-}
-#wrap header nav .gnb li a { 
+#wrap header nav .gnb > li {margin-right: 60px;}
+#wrap header nav .gnb > li:last-child {margin-right:0;}
+#wrap header nav .gnb > li > a { 
     height: 92px; display: block;
     line-height: 92px;
     /* border:1px solid #000; */
@@ -48,6 +44,18 @@
     font-size: 1.125rem;
     font-weight: 700;
 }
+/* ===========================서브메뉴  */
+#wrap header nav .gnb > li .lnb_bg {
+    background: rgba(255,255,255,0.8);
+    position:absolute;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
+/* ==============================================우측 보조메뉴 */
 /* sub nav 시작 */
 #wrap header .right_menu {
     /* background-color: wheat; */
