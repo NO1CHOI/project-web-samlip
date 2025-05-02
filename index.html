@@ -12,6 +12,15 @@
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 우측 pagenation 고정영역 -->
+    <div class="right_nav">
+        <a href="#"><em>Main</em><span></span></a>
+        <a href="#news_all"><em>News & Notice</em><span></span></a>
+        <a href="#studio_wrap"><em>Now @ Samlip Studio</em><span></span></a>
+        <a href="#brands_all"><em>Our Brands</em><span></span></a>
+        <a href="#footer"><em>Company Info</em><span></span></a>
+    </div>
+    <!-- 삼립 메인페이지 시작 영역 -->
     <div id="wrap">
         <header>
             <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립"></a></h1>
@@ -169,7 +178,7 @@
                 </div>
             </section>
             <!-- 2. 뉴스&공지사항 -->
-            <section class="news_all">
+            <section class="news_all" id="news_all">
                 <h2>News & Notice</h2>
                 <p>SPC Samlip news updates, from a company that is always happy.</p>
                 <section class="news_wrap">
@@ -242,9 +251,277 @@
                 </a>
             </section>
             <!-- 3. 삼립 스튜디오 -->
+            <section class="studio_wrap" id="studio_wrap">
+                <h2>Now @ Samlip Studio</h2>
+                <p>Samlip Studio, SPC Samlip’s YouTube channel where you can eat, watch, and digest.</p>
+                <!-- 유튜브 채널 미리보기 바로 보이는 영역 -->
+                <div class="studio_list">
+                    <a href="#"><img src="./images/youtube_01.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_02.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_03.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_04.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_04.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_03.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_02.jpg" alt="동수수퍼몰아보기"></a>
+                    <a href="#"><img src="./images/youtube_01.jpg" alt="동수수퍼몰아보기"></a>
+                </div>
+                <!-- 위 클릭 시 열리는 영역 -->
+                <div class="studio_open">
+                    <div class="open_container">
+                        <button type="button" class="close" title="close(ESC)">X</button>
+                        <div class="youtube">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/B1Pm8DjZa24" title="분명히 남자였는데 여자친구가 됐다 [동수수퍼] 몰아보기 part.2 | 웹드라마" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/uLd2Y3V2V6o" title="[시티델리] 시티델리로 함 박꿔보시죠!✨ 아주 간편해도 가장 고기다운 #시티델리 육즙가득 함박스테이크 (15초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/y58cZqwd0Bo" title="정통 크림빵 x 오레오 조합 미쳤누.. 편의점에서 직접 만들어보세요" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/y58cZqwd0Bo" title="정통 크림빵 x 오레오 조합 미쳤누.. 편의점에서 직접 만들어보세요" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/uLd2Y3V2V6o" title="[시티델리] 시티델리로 함 박꿔보시죠!✨ 아주 간편해도 가장 고기다운 #시티델리 육즙가득 함박스테이크 (15초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/B1Pm8DjZa24" title="분명히 남자였는데 여자친구가 됐다 [동수수퍼] 몰아보기 part.2 | 웹드라마" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="youtube_link">
+                    <img src="./images/icon_youtube.png" alt="">
+                    <em>View on YouTube</em>
+                </a>
+            </section>
             <!-- 4. 삼립 브랜드 -->
+            <section class="brands_all" id="brands_all">
+                <h2>Our Brands</h2>
+                <p>Introduction of SPC Samlip brands that are loved all throughout different business fields.</p>
+                <section class="brands_wrap"> <!-- 1. 슬라이드가 실제 보이는 영역 -->
+                    <div class="brands_container"> <!-- 2.슬라이드 전체 묶는 가로 영역(실제로 움직이는 영역) -->
+                        <ul class="brands_slide1"> <!-- 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brands_slide2"> <!-- 두번째 화면에 보이는 12개 로고 부모 -->
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_01.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_02.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li><!-- 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brand_03.png" alt="갓구운 빵 편하게"></p>
+                                <!-- 아래 li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 1-2.광고 공통 버튼 -->
+                    <div class="brands_btn">
+                        <button type="button" id="brands_prev"><img src="./images/left_arrow.png" alt=""></button>
+                        <button type="button" id="brands_next"><img src="./images/left_arrow.png" alt=""></button>
+                    </div>
+                </section>
+            </section>
         </main>
-        <footer>
+        <footer id="footer">
             <div class="top">
                 <div class="left">
                     <a href="#">개인정보처리방침</a>
